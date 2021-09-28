@@ -1,6 +1,6 @@
 function check(form) {
-    username = new Array("admin", "other");
-    password = new Array("admin", "other");
+    username = new Array("frano", "other");
+    password = new Array("5e5fde", "other");
 
 	if(form.userid.value == username[0] && form.pswrd.value == password[0]||form.userid.value == username[1] && form.pswrd.value == password[1]) {
 		location.replace('cookie.html')/* The Administrator homepage */
