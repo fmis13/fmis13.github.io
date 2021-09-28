@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<script type="text/javascript">
+      		var sessionTimeout = 1800000; //milliseconds
+      		var loginDuration = new Date();
+      		loginDuration.setTime(loginDuration.getTime()+(sessionTimeout));
+      		document.cookie = "AdminPortal=Valid;expires="+loginDuration.toGMTString()+"; path=/";
+    	</script>
+    	<script type="text/javascript">
+    		document.location.replace("index.html")
+    	</script>
+    	<!--
+    	<meta http-equiv="refresh" content="0;URL='../index.html'" />
+    	-->
+	</head>
+	<body>
+		<p>You will be redirected shortly.</p>
+	</body>
+</html>
