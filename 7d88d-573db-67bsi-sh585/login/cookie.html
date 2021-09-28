@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<script type="text/javascript">
+      		var sessionTimeout = 1800000; //milliseconds
+      		var loginDuration = new Date();
+      		loginDuration.setTime(loginDuration.getTime()+(sessionTimeout));
+      		document.cookie = "SiteSession=Valid;expires="+loginDuration.toGMTString()+"; path=/";
+    	</script>
+    	<script type="text/javascript">
+    		document.location.replace("../index.html") //This is the link where the user will go next
+    	</script>
+	</head>
+	<body>
+		<p>You will be redirected shortly.</p>
+	</body>
+</html>
